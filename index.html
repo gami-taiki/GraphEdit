@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <h1>画像アップロード</h1>
-      <form action="./upload.php" method="post" enctype="multipart/form-data">
-          <div id="drop-zone" style="border: 1px solid; padding: 30px;">
-              <p>ファイルをドラッグ＆ドロップもしくは</p>
-              <input type="file" name="file" id="file-input">
-          </div>
-          <h2>アップロードした画像</h2>
-          <div id="preview"></div>
-          <input type="submit" style="margin-top: 50px">
-      </form>
+    <form action="./upload.php" method="post" enctype="multipart/form-data">
+        <div id="drop-zone" style="border: 1px solid; padding: 30px;">
+            <p>ファイルをドラッグ＆ドロップもしくは</p>
+            <input type="file" name="file" id="file-input">
+        </div>
+        <h2>アップロードしたファイル</h2>
+        <div id="preview"></div>
+        <input type="submit" style="margin-top: 50px">
+    </form>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1920 height=1200></canvas>
       <div id="unity-loading-bar">
