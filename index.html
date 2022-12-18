@@ -11,8 +11,7 @@
     <form action="./upload.php" method="post" enctype="multipart/form-data">
        <div id="drop-zone" style="border: 1px solid; padding: 30px;">
            <p>ファイルをドラッグ＆ドロップもしくは</p>
-           <input type="file" name="file" id="file-input">
-           <input type="submit" id="file-send">
+           <input file type="file" onchange='gameInstance.SendMessage("GameObject", "FileSelected", window.URL.createObjectURL(this.files[0]));' /> 
       </div>
       
       
